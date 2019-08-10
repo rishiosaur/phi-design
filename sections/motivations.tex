@@ -1,0 +1,23 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+Computer Science is arguably one of the most interesting fields of \textbf{math}, so why is there such a big disconnect between the math one learns in university and high school CS and the programming language of choice?
+
+Take the example of a simple sum function in math:
+
+\[ f(a, b) = \sum^a_{b} b , \set{a,b} \in \mathbb{N}  \]
+
+This is an example of Sigma notation, a much-used concept in many parts of math. Taking a look at the equivalent expression in Python,
+
+\begin{verbatim}
+    def sum_loop (top_bound, start):
+        accumulator = 0
+        for i in range(start, top_bound+1):
+            accumulator += i
+            i+=1
+        return accumulator
+\end{verbatim}
+
+One might see that the two have absolutely nothing in common.
+
+This may not seem like a problem; the programmer just needs to learn programmatical intuition. However, this can pose a challenge for a \textit{mathematician} to learn programming, because of the existing mathematical intuition that needs to be replaced
+\end{document}

@@ -1,0 +1,23 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+$\Phi$ is a language that doesn't allow for any ambiguity. All characters and keywords must have \textit{one} purpose.
+
+For instance, in Swift, the \texttt{:} operator serves two functions: One for type annotation, and the other for assigning values:
+
+\begin{verbatim}
+//Use one: Type annotation
+var x : String = "Hello World"
+
+func printString(str : String) -> Void {
+    print(str)
+}
+
+//Use two: Value assignment
+printString(str: x)
+\end{verbatim}
+
+The fact that the \texttt{:} operator can be used in multiple cases creates ambiguity, and $\Phi$ aims to solve that.
+
+In $\Phi$'s case, the \texttt{:} operator will only be used for type annotation, and the 
+
+\end{document}

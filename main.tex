@@ -1,13 +1,18 @@
-\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
-\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
-\geometry{letterpaper}                   		% ... or a4paper or a5paper or ...
-\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
-								% TeX will automatically convert eps --> pdf in pdflatex		
+\documentclass[11pt, oneside]{article}
+\usepackage{graphicx}	
 \usepackage{amssymb}
+\usepackage{amsmath}
 \usepackage{subfiles}
 \usepackage{geometry}
+\usepackage[math]{kurier}
+\usepackage{braket}
+\usepackage{hyperref}
 
-\title{$\psi$ lang: Design and Motivations}
+\usepackage{titling}
+\renewcommand\maketitlehooka{\null\mbox{}\vfill}
+\renewcommand\maketitlehookd{\vfill\null}
+
+\title{$\Phi$ lang: Whitepaper}
 \author{Rishi Kothari}
 \date{}
 
@@ -20,15 +25,25 @@
 \newpage
 
 \tableofcontents
-
-\pagenumbering{arabic}
 \newpage
+\pagenumbering{arabic}
+\begin{abstract}
+	Mathematics and Computer Science are deeply intertwined; some universities even offer CS \textit{as} a math course. However, 
+\end{abstract}
 
 \section{Motivations}
+\subfile{sections/motivations.tex}
 
 \section{Design}
 
 \subsection{Syntax}
+\subfile{sections/design/Syntax/intro.tex}
+
+\subsection{Basics}
+\subfile{sections/design/Syntax/s1.tex}
+
+\subsubsection{Ambiguity}
+\subfile{sections/design/Syntax/ambiguity.tex}
 
 \subsection{Relations to Mathematics}
 
