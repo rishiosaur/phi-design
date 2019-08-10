@@ -6,7 +6,13 @@
 \usepackage{geometry}
 \usepackage[math]{kurier}
 \usepackage{braket}
-\title{$\psi$ lang: Whitepaper}
+\usepackage{hyperref}
+
+\usepackage{titling}
+\renewcommand\maketitlehooka{\null\mbox{}\vfill}
+\renewcommand\maketitlehookd{\vfill\null}
+
+\title{$\Phi$ lang: Whitepaper}
 \author{Rishi Kothari}
 \date{}
 
@@ -31,6 +37,13 @@
 \section{Design}
 
 \subsection{Syntax}
+\subfile{sections/design/Syntax/intro.tex}
+
+\subsection{Basics}
+\subfile{sections/design/Syntax/s1.tex}
+
+\subsubsection{Ambiguity}
+\subfile{sections/design/Syntax/ambiguity.tex}
 
 \subsection{Relations to Mathematics}
 
