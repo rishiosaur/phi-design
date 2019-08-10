@@ -8,6 +8,10 @@
 \usepackage{braket}
 \usepackage{hyperref}
 
+\usepackage{titling}
+\renewcommand\maketitlehooka{\null\mbox{}\vfill}
+\renewcommand\maketitlehookd{\vfill\null}
+
 \title{$\Phi$ lang: Whitepaper}
 \author{Rishi Kothari}
 \date{}
@@ -37,6 +41,9 @@
 
 \subsection{Basics}
 \subfile{sections/design/Syntax/s1.tex}
+
+\subsubsection{Ambiguity}
+\subfile{sections/design/Syntax/ambiguity.tex}
 
 \subsection{Relations to Mathematics}
 
