@@ -30,3 +30,5 @@ someOtherfoler/
 *.log
 *.fdb_latexmk
 *.toc
+*.pdf
+*.gz
