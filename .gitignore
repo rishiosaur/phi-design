@@ -32,3 +32,5 @@ someOtherfoler/
 *.toc
 *.pdf
 *.gz
+
+*.out
