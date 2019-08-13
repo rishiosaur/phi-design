@@ -2,9 +2,9 @@
 \begin{document}
 $\Phi$ is a language that doesn't allow for any ambiguity. All characters and keywords must have \textit{one} purpose.
 
-For instance, in Swift, the \texttt{:} operator serves two functions: One for type annotation, and the other for assigning values:
+For instance, in Swift, the \texttt{:} operator serves at least functions: One for type annotation, and the other for assigning values:
 
-\begin{verbatim}
+\begin{lstlisting}[language=swift]
 //Use one: Type annotation
 var x : String = "Hello World"
 
@@ -14,10 +14,20 @@ func printString(str : String) -> Void {
 
 //Use two: Value assignment
 printString(str: x)
-\end{verbatim}
+\end{lstlisting}
 
 The fact that the \texttt{:} operator can be used in multiple cases creates ambiguity, and $\Phi$ aims to solve that.
 
-In $\Phi$'s case, the \texttt{:} operator will only be used for type annotation, and the 
+In $\Phi$'s case, the \texttt{:} operator will only be used for type annotation, and the \texttt{=} operator will be used as an assignment operator.
+
+Similarly, the \texttt{?} operator will serve as an equality operator, in comparison statements:
+
+\begin{verbatim}
+    if(equality: { x ?= y }, action: {
+        print("x equals y")
+    })
+
+    if(equality: { x ?: y })
+\end{verbatim}
 
 \end{document}
