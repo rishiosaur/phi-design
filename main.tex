@@ -12,18 +12,29 @@
     filecolor=magenta,      
     urlcolor=cyan,
     pdftitle={Phi Design},
-    bookmarks=true,
 }
 
 \usepackage{listings}
 \usepackage{xcolor}
-\usepackage[math]{kurier}
+
+\usepackage{arev}
+
 \usepackage{fontspec}
     \setmainfont{SF Pro Text Regular}
-    
     \setmonofont{Monaco}
 
 \usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\huge}
+  {\bfseries\chaptertitlename\ \thechapter}{20pt}{\Huge}
+
+\titleformat{\section}
+    {\normalfont\Large}
+    {\thesection}{1em}{}
+
+\titleformat{\subsection}
+    {\normalfont\itshape\large}
+    {\thesubsection}{1em}{}
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
