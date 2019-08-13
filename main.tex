@@ -1,10 +1,9 @@
-\documentclass[11pt, oneside]{article}
+\documentclass[]{report}
 \usepackage{graphicx}	
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{subfiles}
 \usepackage{geometry}
-\usepackage[math]{kurier}
 \usepackage{braket}
 \usepackage{hyperref}
 \usepackage{listings}
@@ -13,7 +12,6 @@
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
-\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
  
 \lstdefinestyle{mystyle}{ 
     commentstyle=\color{codegreen},
@@ -30,7 +28,8 @@
     showspaces=false,                
     showstringspaces=false,
     showtabs=false,                  
-    tabsize=2
+	tabsize=2,
+	basicstyle=\ttfamily\small
 }
  
 \lstset{style=mystyle}
@@ -59,10 +58,10 @@
 	Mathematics and Computer Science are deeply intertwined; some universities even offer CS \textit{as} a math course. However, 
 \end{abstract}
 
-\section{Motivations}
+\chapter{Motivations}
 \subfile{sections/motivations.tex}
 
-\section{Design}
+\chapter{Design}
 
 \subsection{Syntax}
 \subfile{sections/design/Syntax/intro.tex}
@@ -82,7 +81,7 @@
 
 \subsection{Tokenization}
 
-\section{Grammar}
+\chapter{Grammar}
 
 \subsection{}
 
