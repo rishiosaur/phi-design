@@ -6,8 +6,24 @@
 \usepackage{geometry}
 \usepackage{braket}
 \usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Phi Design},
+    bookmarks=true,
+}
+
 \usepackage{listings}
 \usepackage{xcolor}
+\usepackage[math]{kurier}
+\usepackage{fontspec}
+    \setmainfont{SF Pro Text Regular}
+    
+    \setmonofont{Monaco}
+
+\usepackage{titlesec}
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -39,7 +55,7 @@
 \renewcommand\maketitlehooka{\null\mbox{}\vfill}
 \renewcommand\maketitlehookd{\vfill\null}
 
-\title{$\Phi$ lang: Whitepaper}
+\title{The language of Phi: Whitepaper}
 \author{Rishi Kothari}
 \date{}
 
@@ -62,7 +78,7 @@
 \chapter{Motivations}
 \subfile{sections/motivations.tex}
 
-\chapter{Design}
+\chapter[Design]{Ideology, Design}
 
 \section{Syntax}
 \subfile{sections/design/Syntax/intro.tex}
@@ -83,7 +99,5 @@
 \section{Tokenization}
 
 \chapter{Grammar}
-
-\section{}
 
 \end{document}  
